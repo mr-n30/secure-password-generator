@@ -26,8 +26,8 @@ function generatePassword(num, passwordLength) {
 
 // An array of printable ASCII characters.
 const CHARS = generateAsciiChars(32, 127);
-max = 32;
-min = 24;
+max = 32; // max pass length
+min = 24; // min pass length
 
 // Random set a password length between min and max
 const passwordLength = Math.floor(Math.random() * (max - min + 1)) + min;
